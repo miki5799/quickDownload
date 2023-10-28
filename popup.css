@@ -1,0 +1,67 @@
+:root {
+  --box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  --label-font-size: 16px;
+  --label-font-weight: bold;
+  --input-width: 100%;
+  --input-padding: 5px;
+  --input-border-radius: 3px;
+  --input-border: 1px solid #ccc;
+  --input-font-size: 16px;
+  --button-background-color: #4CAF50;
+  --button-color: #fff;
+  --button-border: none;
+  --button-border-radius: 3px;
+  --button-font-size: 16px;
+  --button-cursor: pointer;
+  --button-hover-background-color: #3e8e41;
+  --checkbox-font-size: 16px;
+  --debug-log-margin-top: 20px;
+}
+
+.popup {
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: var(--box-shadow);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: var(--label-font-size);
+  font-weight: var(--label-font-weight);
+}
+
+input[type="text"] {
+  width: var(--input-width);
+  padding: var(--input-padding);
+  border-radius: var(--input-border-radius);
+  border: var(--input-border);
+  font-size: var(--input-font-size);
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: var(--button-background-color);
+  color: var(--button-color);
+  border: var(--button-border);
+  border-radius: var(--button-border-radius);
+  font-size: var(--button-font-size);
+  cursor: var(--button-cursor);
+}
+
+button:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+.checkbox {
+  margin-top: 10px;
+  font-size: var(--checkbox-font-size);
+}
+
+#debugLog {
+  margin-top: var(--debug-log-margin-top);
+}

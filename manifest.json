@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Download Location Setter",
+  "version": "1.0",
+  "permissions": ["downloads", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "assets/quickDownloadIcon.png"
+  }
+}

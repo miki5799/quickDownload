@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quick Download</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a href="index.html" class="logo">
+              <strong>Chrome</strong> extension
+            </a>
+            <ul class="icons">
+              <li>
+                <a href="#" class="icon brands fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-facebook-f"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-snapchat-ghost"
+                  ><span class="label">Snapchat</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-instagram"
+                  ><span class="label">Instagram</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-medium-m"
+                  ><span class="label">Medium</span></a
+                >
+              </li>
+            </ul>
+          </header>
+          <section>
+            <header class="main">
+              <h1>Quick Download Location Setter</h1>
+            </header>
+            <div class="col-6 col-12-medium">
+              <!-- Form -->
+              <h3>Form</h3>
+              <form method="post" action="#">
+                <div class="row gtr-uniform">
+                  <div class="col-6 col-12-xsmall">
+                    <input
+                      type="text"
+                      id="domainInput"
+                      value=""
+                      placeholder="URL"
+                    />
+                  </div>
+                  <div class="col-6 col-12-xsmall">
+                    <input
+                      type="text"
+                      id="pathInput"
+                      value=""
+                      placeholder="Path"
+                    />
+                  </div>
+                  <!-- Break -->
+                  <div class="col-12">
+                    <ul class="actions">
+                      <li>
+                        <button id="addDomain">Add/Update Domain</button>
+                      </li>
+                      <li>
+                        <button id="viewRegistry">Open in new tab</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-6 col-12-medium">
+                  <p>&NonBreakingSpace;</p>
+                </div>
+                <div class="table-wrapper">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>URL</th>
+                        <th>Path</th>
+                        <th style="width: fit-content">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody id="registryTable"></tbody>
+                  </table>
+                </div>
+                <div class="col-6 col-12-medium">
+                  <ul id="registryList"></ul>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="debugMode" />
+                  <label for="debugMode">Enable Debugging Mode</label>
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="popup.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
